@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/process-chdir",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Change the current working directory.",
   "license": "Apache-2.0",
   "author": {
