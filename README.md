@@ -105,6 +105,22 @@ console.log( cwd() );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/process/cwd`][@stdlib/process/cwd]: return the current working directory.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -161,6 +177,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/process-chdir/main/LICENSE
 
 [chdir]: http://man7.org/linux/man-pages/man2/chdir.2.html
+
+<!-- <related-links> -->
+
+[@stdlib/process/cwd]: https://github.com/stdlib-js/process-cwd
+
+<!-- </related-links> -->
 
 </section>
 
