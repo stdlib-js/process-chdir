@@ -121,7 +121,7 @@ console.log( cwd() );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/process/cwd`][@stdlib/process/cwd]</span><span class="delimiter">: </span><span class="description">return the current working directory.</span>
+-   <span class="package-name">[`@stdlib/process-cwd`][@stdlib/process/cwd]</span><span class="delimiter">: </span><span class="description">return the current working directory.</span>
 
 </section>
 
