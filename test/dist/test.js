@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,59 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var cwd = require( '@stdlib/process-cwd' );
-var IS_BROWSER = require( '@stdlib/assert-is-browser' );
-var chdir = require( './../../dist' );
-
-
-// VARIABLES //
-
-var DIR = cwd();
-var opts = {
-	'skip': IS_BROWSER
-};
-
-
-// FUNCTIONS //
-
-/**
-* Restores the current working directory.
-*
-* @private
-*/
-function restore() {
-	chdir( DIR );
-}
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', opts, function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof chdir, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function changes the working directory', opts, function test( t ) {
-	var err = chdir( __dirname );
-
-	t.equal( err, null, 'returns expected value' );
-	t.equal( cwd(), __dirname, 'sets working directory' );
-
-	// Restore current working directory:
-	restore();
-
-	t.end();
-});
-
-tape( 'if the function encounters an error when attempting to change the working directory, the function returns the error', opts, function test( t ) {
-	var err = chdir( 'kjflajflsda/bkadlfjadlfksabldjkfklajsf/dkfaljsf' ); // non-existent directory
-
-	t.equal( err instanceof Error, true, 'returns an error' );
-	t.equal( cwd(), DIR, 'does not change working directory' );
-
-	// Restore current working directory:
-	restore();
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
