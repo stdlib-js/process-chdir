@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/process-chdir/tags). For example,
+
+```javascript
 import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@v0.2.0-deno/mod.js';
 ```
 
@@ -79,7 +84,7 @@ If the function encounters an error when attempting to change the working direct
 
 ```javascript
 import cwd from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-cwd@deno/mod.js';
-import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@v0.2.0-deno/mod.js';
+import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@deno/mod.js';
 
 // Print the current working directory:
 var dir = cwd();
