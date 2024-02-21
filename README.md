@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@deno/mod.js';
+import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@v0.2.1-deno/mod.js';
 ```
 
 #### chdir( path )
@@ -79,7 +79,7 @@ If the function encounters an error when attempting to change the working direct
 
 ```javascript
 import cwd from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-cwd@deno/mod.js';
-import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@deno/mod.js';
+import chdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-chdir@v0.2.1-deno/mod.js';
 
 // Print the current working directory:
 var dir = cwd();
